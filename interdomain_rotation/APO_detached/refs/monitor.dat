@@ -3,8 +3,8 @@
 #
 # BIASED (see OPES blocks in plumed.dat):
 #   all replicas : p_rmsd_twist_l0p1.s  dist_R62_D67  dist_R76_D69
-#   replicas 1-4 : R169_D290  R169_D26  theta_rev
-#   replicas 3-4 : cmap_holo_specific  cmap_apo_specific
+#   replicas 1-3 : R169_D290  R169_D26  theta_rev
+#   replicas 3 : cmap_holo_specific  cmap_apo_specific
 
 UNITS LENGTH=A TIME=ps
 
@@ -172,7 +172,7 @@ V8_E389_at: DISTANCE ATOMS=108,6193 NOPBC  # res8:CA – res389:CA
 L106_Y21_at: DISTANCE ATOMS=1723,315 NOPBC  # res106:CA – res21:CA
 L100_V8_at: DISTANCE ATOMS=1610,108 NOPBC  # res100:CA – res8:CA
 
-#  state CMAPs  (biased replicas 3-4) 
+#  state CMAPs  (biased replicas 3)
 # RATIONAL R_0=7.350859 D_0=0.0 NN=6 MM=12
 
 cmap_holo_specific: CONTACTMAP ...
